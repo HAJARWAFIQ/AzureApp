@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier le CV</title>
+</head>
+<body>
+    <h1>Modifier mon CV</h1>
+    <form method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" value="{{ cv.name }}" required>
+        <br>
+
+        <label for="title">Titre :</label>
+        <input type="text" id="title" name="title" value="{{ cv.title }}" required>
+        <br>
+
+        <h3>Expérience</h3>
+        <label for="exp_role1">Rôle 1 :</label>
+        <input type="text" id="exp_role1" name="exp_role1" value="{{ cv.experience[0].role }}" required>
+        <br>
+        <label for="exp_company1">Entreprise 1 :</label>
+        <input type="text" id="exp_company1" name="exp_company1" value="{{ cv.experience[0].company }}" required>
+        <br>
+        <label for="exp_duration1">Durée 1 :</label>
+        <input type="text" id="exp_duration1" name="exp_duration1" value="{{ cv.experience[0].duration }}" required>
+        <br>
+
+        <h3>Formation</h3>
+        <label for="edu_degree1">Diplôme :</label>
+        <input type="text" id="edu_degree1" name="edu_degree1" value="{{ cv.education[0].degree }}" required>
+        <br>
+        <label for="edu_university1">Université :</label>
+        <input type="text" id="edu_university1" name="edu_university1" value="{{ cv.education[0].university }}" required>
+        <br>
+        <label for="edu_year1">Année :</label>
+        <input type="text" id="edu_year1" name="edu_year1" value="{{ cv.education[0].year }}" required>
+        <br>
+
+        <h3>Compétences</h3>
+        <label for="skills">Compétences (séparées par des virgules) :</label>
+        <input type="text" id="skills" name="skills" value="{{ ','.join(cv.skills) }}" required>
+        <br>
+
+        <button type="submit">Enregistrer</button>
+    </form>
+</body>
+</html>

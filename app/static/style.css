@@ -1,0 +1,107 @@
+/* Global reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.cv-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+.cv-header {
+    text-align: center;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-header h1 {
+    font-size: 2em;
+    color: #007BFF;
+    margin: 0;
+}
+
+.cv-header h2 {
+    font-size: 1.2em;
+    color: #555;
+    font-weight: normal;
+    margin: 5px 0 0;
+}
+
+/* Section Titles */
+.cv-section h3 {
+    font-size: 1.2em;
+    color: #007BFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs and Lists */
+.cv-section p {
+    margin: 0 0 15px;
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-list li {
+    margin-bottom: 10px;
+}
+
+.cv-list li strong {
+    color: #007BFF;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.skill-item {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 15px;
+    }
+
+    .cv-header h1 {
+        font-size: 1.8em;
+    }
+
+    .cv-header h2 {
+        font-size: 1em;
+    }
+}
